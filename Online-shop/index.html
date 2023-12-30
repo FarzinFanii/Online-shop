@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <section class="header">
+        <div class="container-fluid bg-color-dark pt-2 pb-1">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="item mx-3">
+                    <i class="bi bi-person-circle h3" id="user"></i>
+                    <div id="contextMenu" class="context-menu mt-2" style="display: none;">
+                        <ul class="menu">
+                            <li class="logout"><a href="#"><i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+                                    Logout</a></li>
+                        </ul>
+                    </div>
+                    <span id="user" class="click">Hi, Farzin</span>
+                </div>
+                <div class="item">
+                    <img src="./img/LOGO.png" alt="" style="height: 90px; width: 200px;">
+                </div>
+                <div class="item mx-3">
+                    <span>Cart</span>
+                    <span class="change-number" id="cart-items">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- input & select-option -->
+    <section class="forms pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-6">
+                    <div class="search-container w-100 hhh input_media">
+                        <input type="text" class="search-input" id="search-input">
+                        <button class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 col-6 col-md-6 category-media">
+                    <select id="category-filter" class="form-select w-50 h-100" aria-label="Default select example">
+                        <option selected="">All Category</option>
+                        <option value="Shirts">Shirts</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Stationery">Stationery</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section cards -->
+    <section class="p-2" id="service">
+        <div class="container-fluid my-4">
+            <div class="row g-4 my-4" id="product-list">
+                <!-- add Products -->
+            </div>
+        </div>
+    </section>
+    <!--section form-->
+    <section class="form-1 pt-5" id="contact">
+        <div>
+            <h2 class="text-uppercase special-color-text text-center span-font">contact us</h2>
+        </div>
+
+        <div class="container">
+            <div class=" row gap-3 py-3">
+                <div class="d-md-flex justify-content-center gap-3">
+                    <div class="col-md-6 special-color-2 py-2">
+                        <form action="#">
+                            <div class="row g-3 px-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name"
+                                        aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name"
+                                        aria-label="Last name">
+
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="Subject">
+                                </div>
+                                <!--textarea-->
+                                <div class="mb-3">
+                                    <textarea class="form-control " style="width: 100%; height: 130PX;"
+                                        id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="pb-3">
+                                    <button type="submit" class="btn btn-orange px-5"
+                                        style="background-color: rgb(8, 8, 49); color: white;">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--details box-->
+                    <div class=" col-md-4 special-color">
+                        <div
+                            class="card-body pb-5 d-flex align-items-start justify-content-start flex-column px-3 py-5  h-100 gap-4 text-white">
+                            <div class="d-flex align-items-start justify-content-start px-0">
+                                <div class=" d-flex justify-content-start align-items-start   ">
+                                    <i class="bi bi-geo-alt-fill h2 orange"></i>
+                                </div>
+                                <div class="px-4">
+                                    <h5 class="card-title text-uppercase p-bold">Head Office</h5>
+                                    <address class="card-text small">Golestan Street</address>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex align-items-start justify-content-start px-0 ">
+                                <div class=" d-flex justify-content-start align-items-start ">
+                                    <i class="bi bi-geo-alt-fill h2 orange"></i>
+                                </div>
+                                <div class="px-4">
+                                    <h5 class="card-title text-uppercase p-bold">Branch Office</h5>
+                                    <address class="card-text small">Haftanan street</address>
+                                </div>
+                            </div>
+
+
+
+                            <div class="d-flex align-items-start justify-content-start px-0 ">
+                                <div class=" d-flex justify-content-start align-items-start   ">
+                                    <i class="bi bi-envelope-open h2 orange"></i>
+                                </div>
+                                <div class="px-4">
+                                    <h5 class="card-title text-uppercase p-bold">Customer Service</h5>
+                                    <address class="card-text small">Fani79Farzin@gmail.com</address>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex align-items-start justify-content-start px-0">
+                                <div class=" d-flex justify-content-start align-items-start ">
+                                    <i class="bi bi-envelope-open h2 orange"></i>
+                                </div>
+                                <div class="px-4">
+                                    <h5 class="card-title text-uppercase p-bold">Return & Refund</h5>
+                                    <address class="card-text small">Fani79Farzin@gmail.com</address>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="d-flex text-end justify-content-end pe-5">
+        <a href="#" class="bottom-0 end-0 p-3">
+            <i class="bi bi-arrow-up-square h1 arrow-color"></i>
+        </a>
+    </div>
+    <footer class=" p-2 bg-color-dark text-center">
+        <div class="container-fluid">
+            <p class="lead">&copy; <span class="special-color-text"> Online Shop</span>.All Rights Reserved.</p>
+            <p class="lead"> Designed by <span class="special-color-text">Farzin Fani</span></p>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

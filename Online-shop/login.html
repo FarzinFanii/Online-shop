@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <section class="form">
+        <div class="container">
+            <h1 id="login">login</h1>
+            <form action="#" id="login_form">
+                <div class="form_body">
+                    <div class="flex">
+                        <label for="email">Email</label>
+                        <span class="icons"><i class="bi bi-envelope"></i></span>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_body">
+                    <div class="flex">
+                        <label for="Password">Password</label>
+                        <span class="icons"><i class="bi bi-lock"></i></span>
+                    </div>
+                    <input type="password" id="Password" name="password" required>
+                </div>
+                <p id="error">Email or Password Is Incorrect</p>
+                <div class="form_body">
+                    <div class="flex">
+                        <input type="checkbox" name="checkbox" value="Remember_Me" id="checkbox"> Remember Me <a
+                            href="#">Forget Password</a>
+                    </div>
+                </div>
+                <div class="form_body form-input">
+                    <button type="submit" id="btn-button">Log in</button>
+                </div>
+                <div class="form_body">
+                    <p id="have_account">Dont have a account <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./login.js"></script>
+</body>
+
+</html>

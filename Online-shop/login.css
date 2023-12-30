@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(
+        100deg,
+        rgba(166, 116, 245, 0.8),
+        rgba(74, 93, 155, 0.7)
+      ), url(./img/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-image_133225.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.form{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border: 2px solid  rgba(8, 8, 49, 0.2);
+    border-radius: 20px;
+    /* background-color: rgb(16, 16, 73); */
+    background: radial-gradient(circle at center bottom, rgb(27, 27, 63),rgb(6, 6, 78));
+    width: 30%;
+    max-width: 70%;
+    padding-bottom: 40px;
+    color: #ffffff;
+}
+h1#login{
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+#email, #Password{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #644dff;
+    padding: 6px;
+    margin-top: 10px;
+    background-color:rgb(16, 16, 73) ;
+    color: #ffffff;
+    transition: 0.4s ease-in;
+}
+
+#email:hover, #Password:hover{
+    scale: 1.2;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.form_body{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+#checkbox,p#have_account{
+    font-size: 13px;
+}
+
+p#have_account a{
+    font-weight: 600;
+    margin-left:20px ;
+}
+#btn-button{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0px;
+    letter-spacing: 1.3px;
+    color: #ffffff;
+    background-color: #644dff;
+    border: 2px solid #4836bb;
+    border-radius: 12px;
+    box-shadow: 0 2px 0 #4836bb;
+    transform: skew(5deg);
+    transition: all .1s ease;
+}
+#btn-button:active{
+    letter-spacing: 0px;
+    transform: skew(5deg) translateY(4px);
+    box-shadow: 0 0 0 #654dff63;
+}
+p#error{
+    text-align: center;
+    color: red;
+    display: none;
+    margin-top: 10px;
+    font-size: 11PX;
+}
+@media(max-width:1000px){
+    div.container{
+        width: 40%;
+    }
+}
+@media(max-width:900px){
+    div.container{
+        width: 50%;
+    }
+}
+@media(max-width:768px){
+    div.container{
+        width: 60%;
+    }
+}
+
+@media(max-width:650px){
+    div.container{
+        width: 100%;
+    }
+}
+
+
